@@ -189,7 +189,7 @@ footer{
 .footer_column p{
     margin-bottom: 0.5rem;
 }
-.footer_colugitmn a{
+.footer_column a{
     color: var(--light);
 }
 .footer_column a:hover{
