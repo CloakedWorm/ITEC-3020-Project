@@ -8,7 +8,7 @@
     --dark: #1F2937;
     --light: #FFFFFF;
 }
-
+/*home page*/
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
+    padding-right: 10px;
     background-color: var(--primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -219,6 +220,17 @@ footer {
     padding-top: 1rem;
 
     border-top: 1px solid rgba(255, 255, 255, 0.2)
+}
+/*About Page*/
+.map_container{
+    display:flex;
+    align-items: center;
+    gap:3rem;
+}
+.map_img{
+    flex:1;
+    max-width: 600px;
+    border-radius: 12px;
 }
 
 /*media query for phones*/
