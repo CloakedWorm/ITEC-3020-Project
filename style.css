@@ -39,13 +39,12 @@ header {
 }
 
 main {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
     min-height: 80vh;
@@ -66,7 +65,8 @@ main {
 }
 
 .hero_content {
-    flex: 1;
+
+    flex:1;
     color:var(--accent)
 }
 
@@ -219,4 +219,52 @@ footer {
     padding-top: 1rem;
 
     border-top: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+/*media query for phones*/
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        gap:20px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .hero{
+        min-height: 70vh;
+        padding: 40px 20px;
+    }
+
+    .hero_content{
+        width:100%;
+        max-width: 500px;
+        padding:2rem;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+    
+    .hero h2{
+        font-size:1.5rem;
+    }
+
+    .hero p{
+        font-size: .95rem;
+    }
+
+    .service_container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer_container{
+        flex-direction: column;
+        text-align: center;
+    }
 }
