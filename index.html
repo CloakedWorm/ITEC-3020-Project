@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <title>CloverField Technology</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /*internal css for a gray gradient for the hero welcome message*/
+        .hero_content {
+            position: relative;
+            max-width: 1200px;
+            padding: 2rem;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(40, 40, 40, 0.75));
+            backdrop-filter: blur(.5px);
+            color:white;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,24 +38,16 @@
     </header>
     <main>
         <section class="hero">
-            <style>
-                .hero_content {position: relative;
-                                padding:2rem;
-                                background-image: 
-                                    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-                                    url("images/Background\ \(rainforest\ river\).jpg")
-                    }
-            </style>
-            <div class="hero_content">
-                <h1>CloverField Technologies</h1>
-                <h2>Living is our Goal!</h2>
-                <p style="max-width: 35rem; margin-bottom:2rem">
-                    Starting as a pharmacy in the late 1680's CloverField has grown into a
-                    multinational conglomerate. Leading in Chemicals, Consumer products,
-                    Health foods, and Industrial Productions.
-                </p>
-                <a href="about.html">Learn About CloverField Technologies</a>
-            </div>
+        <div class="hero_content">
+            <h1>CloverField Technologies</h1>
+            <h2>Living is our Goal!</h2>
+            <p style="max-width: 35rem; margin-bottom:2rem">
+                Starting as a pharmacy in the late 1680's CloverField has grown into a
+                multinational conglomerate. Leading in Chemicals, Consumer products,
+                Health foods, and Industrial Productions.
+            </p>
+            <a href="about.html">Learn About CloverField Technologies</a>
+        </div>
         </section>
 
         <section class="overview">
@@ -64,7 +69,7 @@
                 </article>
                 <article class="service_card">
                     <h3>Health Foods</h3>
-                    <p>Browse through our line of health products.</p>
+                    <p style="padding-bottom:3.5rem">Browse through our line of health products.</p>
                     <a href="services.html" class="button">Learn More</a>
                 </article>
                 <article class="service_card">
