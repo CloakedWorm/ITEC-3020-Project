@@ -49,6 +49,11 @@ main {
     align-items: center;
     gap: 4rem;
     min-height: 80vh;
+
+    background-image: url("images/Background\ \(rainforest\ river\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero a {
@@ -62,16 +67,7 @@ main {
 
 .hero_content {
     flex: 1;
-}
-
-.hero_img {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: var(--light);
-    border-radius: 10px;
+    color:var(--accent)
 }
 
 .overview {
