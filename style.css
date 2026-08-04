@@ -67,7 +67,6 @@ main {
 }
 
 .hero_content {
-
     flex: 1;
     color: var(--accent)
 }
@@ -98,6 +97,12 @@ main {
 .service_card h3 {
     color: var(--secondary);
     margin-bottom: 1rem;
+}
+
+.service_card h4 {
+    color: #FFFFFF;
+                /*added a border around the text */
+    -webkit-text-stroke: .5px #AF719D;
 }
 
 .service_card:hover {
