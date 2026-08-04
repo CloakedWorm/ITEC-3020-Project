@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <title>Producsts Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .service_card img{
+            width: 250px;
+            height: 180px;
+            object-fit: fit;
+            display: block;
+            margin: 1rem auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header id="header_placeholder">
             <a href="index.html" class="logo">
                 Comapny Name(change this)
             </a>
@@ -24,29 +33,56 @@
         </nav>
     </header>
     <main>
-        <h1>Products</h1>
-        <div>
-            <div>
-                <h2>Product 1</h2>
-                <p>product description</p>
-                <h3>Price</h3>
-                <button>Buy</button>
+        <section class="products">
+            <h2>Our Products and Services</h2>
+            <div class="service_container">
+                <article class="service_card">
+                    <h3>Gene Therapy Kit</h3>
+                    <img src="images/Gene Therapy Kit.png" alt="gene therapy kit">
+                    <p>Advanced research kit designed for gene editing and laboratory testing.</p>
+                    <h4>Price: $499.99</h4>
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                <article class="service_card">
+                    <h3>BioLab Analyzer</h3>
+                    <img src="images/BioLab Analyzer.webp" alt="BioLab Analyzer">
+                    <p>High-precision analyzer for detailed biological research and testing.</p>
+                    <h4>Price: $1,299.99</h4>
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                <article class="service_card">
+                    <h3>Pharma Development Suite</h3>
+                    <img src="images/Pharma Development Suite.webp" alt="Pharma Development Suite">
+                    <p>Comprehensive suite for pharmaceutical development and research.</p>
+                    <h4>Price: $2,999.99</h4>
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                <article class="service_card">
+                    <h3>Industrial Enzyme Pack</h3>
+                    <img src="images/Industrial Enzyme Pack.jpg" alt="Industrial Enzyme Pack">
+                    <p style="padding-bottom: 3.5rem;">High-performance enzymes for industrial applications.</p>
+                    <h4>Price: $1,999.99</h4>   
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                <article class="service_card">
+                    <h3>Diagnostic Test Kit</h3>
+                    <img src="images/Diagnostic Test Kit.webp" alt="Diagnostic Test Kit">
+                    <p style="padding-bottom: 3.5rem;">Comprehensive diagnostic test kit for accurate results.</p>
+                    <h4>Price: $899.99</h4>
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                <article class="service_card">
+                    <h3>Research Compound Library</h3>
+                    <img src="images/Research Compound Library.webp" alt="Research Compound Library">
+                    <p>Extensive collection of research compounds for scientific studies.</p>
+                    <h4>Price: $1,499.99</h4>
+                    <a href="#" class="button">Purchase</a>
+                </article>
+                
             </div>
-            <div>
-                <h2>Product 2</h2>
-                <p>proudct description</p>
-                <h3>Price</h3>
-                <button>Buy</button>
-            </div>
-            <div>
-                <h2>Product 3</h2>
-                <p>product description</p>
-                <h3>Price</h3>
-                <button>Buy</button>
-            </div>
-        </div>
+        </section>
     </main>
-    <footer>
+    <footer id="footer_placeholder">
         <p>&copy;2026 Company Name.</p>
     </footer>
 </body>
