@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "title": "Adding Dark Mode theme",
+      "date": "2026-08-03",
+      "summary": "The addition of the dark mode button and javascript took longer than expected. alot of issues arose from miss-naming ids, using the wrong inputs for the javascript methods and apply the correct palette. Alot of the challenge came from going through my css and making sure that all the correct colors were being applied to the right elements. after the inital hurdle, tweaking and fine tuning the css became more streamlined. "},
+    {
+      "id": 2,
+      "title": "Dynamic Header & Footer",
+      "date": "2026-08-03",
+      "summary": "Going into this part I had high confidence thinking it would be an easy plug and play. But after going back and forth with my html and javascript, this ended up being (for dumb reasons) the hardest implementation. I tried to force the header and footer elements to be tagged by my placeholder ids, which kinda worked but it messed with the styling of the page and broke some of the navigation aspects. after changing the elements to div's, the header and footer html started to cooperate. updating the htmls was tedious."},
+    {
+      "id": 3,
+      "title": "Dynamic Blog / News Section",
+      "date": "2026-08-04",
+      "summary": "This was my first time working with json files and javascript so this aspect was kinda out of my comfort zone. took alittle trial and error but i manged to understand to have my blog post be in an array and in my javascript i would need to iterate through them to generate my blog-cards. the main issue with the part was writing down my thoughts on each section. i have a more free form devlopment cycle so filling out my json file with blogs happened right at the end of my implementation. I should've planned this part a bit better.. there is alot that i wanted to add to this function (like the read more button to actual work and expand out the text)"},
+    {
+      "id": 4,
+      "title": "Form Validation and Blog Filter",
+      "date": "2026-08-04",
+      "summary": "Oh the validation process, trying to understand what arguments I needed to pass into my functions took wayyy too long. after scouring the internet and the text book i finally managed to get the right arguments. still dont fully understand how i got it working but i know it works. the blog filter was less troublesome as most of my issues with the function was resolved and i had a better understandiing on how it should work. still took some trial and error but we got there in the end."}
+]
