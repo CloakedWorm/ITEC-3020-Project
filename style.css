@@ -8,6 +8,7 @@
     --dark: #1F2937;
     --light: #FFFFFF;
 }
+
 /*home page*/
 * {
     margin: 0;
@@ -67,8 +68,8 @@ main {
 
 .hero_content {
 
-    flex:1;
-    color:var(--accent)
+    flex: 1;
+    color: var(--accent)
 }
 
 .overview {
@@ -121,9 +122,10 @@ main {
     margin: auto;
 }
 
-        .call_to_action a{
-            margin-top: 1rem;
-        }
+.call_to_action a {
+    margin-top: 1rem;
+}
+
 .button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -224,20 +226,23 @@ footer {
 
     border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
+
 /*About Page*/
-.map{
+.map {
     text-align: left;
 }
-.map_container img{
+
+.map_container img {
     align-items: center;
     border-radius: 12px;
-    margin:auto;
+    margin: auto;
     background-color: var(--accent);
-    padding:1rem;
-    border-radius:15px;
+    padding: 1rem;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-.person{
+
+.person {
     align-items: center;
     background-color: var(--light);
     border-radius: 12px;
@@ -245,48 +250,48 @@ footer {
 }
 
 /*media query for phones*/
-@media (max-width:768px){
-    header{
+@media (max-width:768px) {
+    header {
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
         text-align: center;
     }
 
-    nav ul{
-        flex-wrap:wrap;
+    nav ul {
+        flex-wrap: wrap;
         justify-content: center;
-        gap:20px;
+        gap: 20px;
     }
 
-    .hero{
+    .hero {
         min-height: 70vh;
         padding: 40px 20px;
     }
 
-    .hero_content{
-        width:100%;
+    .hero_content {
+        width: 100%;
         max-width: 500px;
-        padding:2rem;
-        text-align:center;
+        padding: 2rem;
+        text-align: center;
     }
 
-    .hero h1{
-        font-size:2rem;
-    }
-    
-    .hero h2{
-        font-size:1.5rem;
+    .hero h1 {
+        font-size: 2rem;
     }
 
-    .hero p{
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
         font-size: .95rem;
     }
 
-    .service_container{
+    .service_container {
         grid-template-columns: 1fr;
     }
 
-    .footer_container{
+    .footer_container {
         flex-direction: column;
         text-align: center;
     }
