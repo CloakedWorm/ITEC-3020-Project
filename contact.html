@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <title>Contact Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero{
+            background-image: none;
+            text-align: center;
+            min-height: 20vh;
+        }
+        .hero_content{
+            color: #1F2937;
+            background: #8B639B;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header id="header_placeholder">
             <a href="index.html" class="logo">
                 Comapny Name(change this)
             </a>
@@ -24,16 +38,26 @@
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <div class="hero_content">
+                <h1>Contact CloverField Technologies</h1>
+                <p>
+                    We value your feedback and inquiries. Please fill out the form below to get in touch with us.
+                </p>
+            </div>
+        </section>
+        <section class="form">
         <h1>Contact Us</h1>
         <form>
-            <input type="text" ; placeholder="Name"></input>
-            <input type="text" ; placeholder="Email"></input>
+            <input type="text" ; placeholder="Name">
+            <input type="text" ; placeholder="Email">
             <input type="text" ; placeholder="Subject"></input>
             <textarea placeholder="Message" ;></textarea><br>
-            <button>Submit</button>
+            <a href="#" class="button">Submit</a>
         </form>
+        </section>
     </main>
-    <footer>
+    <footer id="footer_placeholder">
         <p>&copy;2026 Company Name.</p>
     </footer>
 </body>
