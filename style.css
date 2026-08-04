@@ -222,15 +222,23 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
 /*About Page*/
-.map_container{
-    display:flex;
-    align-items: center;
-    gap:3rem;
+.map{
+    text-align: left;
 }
-.map_img{
-    flex:1;
-    max-width: 600px;
+.map_container img{
+    align-items: center;
     border-radius: 12px;
+    margin:auto;
+    background-color: var(--accent);
+    padding:1rem;
+    border-radius:15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.person{
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1)y;
 }
 
 /*media query for phones*/
