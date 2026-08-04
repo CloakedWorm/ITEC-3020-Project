@@ -5,38 +5,53 @@
     <meta charset="UTF-8">
     <title>News Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            background-image: none;
+            text-align: center;
+            min-height: 20vh;
+        }
+
+        .hero_content {
+            color: #1F2937;
+            background: #8B639B;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-            <a href="index.html" class="logo">
-                Comapny Name(change this)
-            </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header_placeholder"></div>
     <main>
-        <h1>News</h1>
-        <article>
-            <h2>Log 1</h2>
-            <p>Main content, dont hard code it</p>
-        </article>
-        <article>
-            <h2>log 2</h2>
-            <p>main content</p>
-        </article>
+        <section class="hero">
+            <div class="hero_content">
+                <h1>Latest News</h1>
+                <p>
+                    Stay updated with the latest news and developments from CloverField Technologies.
+                </p>
+            </div>
+        </section>
+        <section class="news">
+            <input type="text" id="filter-input" placeholder="Search news..."
+            style="padding:5px;
+            margin:auto;">
+
+            <p id="no-results" style="display:none;">
+                No results found.
+            </p>
+            <div id="news_main">
+                <!--Load blog post via json file-->
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy;2026 Company Name.</p>
-    </footer>
+    <div id="footer_placeholder"></div>
+    <script src="components.js"></script>
+    <script src="theme.js"></script>
+    <script src="news.js"></script>
+    <script src="query.js"></script>
 </body>
 
 </html>
+

@@ -11,43 +11,27 @@
             position: relative;
             max-width: 1200px;
             padding: 2rem;
-            background: linear-gradient(
-                rgba(0, 0, 0, 0.75),
-                rgba(40, 40, 40, 0.75));
+            background: linear-gradient(rgba(0, 0, 0, 0.75),
+                    rgba(40, 40, 40, 0.75));
             backdrop-filter: blur(.5px);
-            color:white;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            CloverField Technologies
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   <div id="header_placeholder"></div>
     <main>
         <section class="hero">
-        <div class="hero_content">
-            <h1>CloverField Technologies</h1>
-            <h2>Living is our Goal!</h2>
-            <p style="max-width: 35rem; margin-bottom:2rem">
-                Starting as a pharmacy in the late 1680's CloverField has grown into a
-                multinational conglomerate. Leading in Chemicals, Consumer products,
-                Health foods, and Industrial Productions.
-            </p>
-            <a href="about.html">Learn About CloverField Technologies</a>
-        </div>
+            <div class="hero_content">
+                <h1>CloverField Technologies</h1>
+                <h2>Living is our Goal!</h2>
+                <p style="max-width: 35rem; margin-bottom:2rem">
+                    Starting as a pharmacy in the late 1680's CloverField has grown into a
+                    multinational conglomerate. Leading in Chemicals, Consumer products,
+                    Health foods, and Industrial Productions.
+                </p>
+                <a href="about.html">Learn About CloverField Technologies</a>
+            </div>
         </section>
 
         <section class="overview">
@@ -71,7 +55,7 @@
                     <h3>Products</h3>
                     <!--button was not lining up due to external css-->
                     <p style="padding-bottom: 0rem">Browse through our line of products
-                        and learn about the services we provide for industrial applications.</p>
+                        and learn about the services we provide for industrial applications.
                     </p>
                     <a href="products.html" class="button">Learn More</a>
                 </article>
@@ -89,35 +73,10 @@
         <p>Our team is prepared to help bring your next innovation to life.</p>
         <a href="services.html" class="button">Learn More</a>
     </section>
-    <footer>
-        <div class="footer_container">
-            <div class="footer_column">
-                <h3>CloverField Technologies</h3>
-                <p>Living is our Goal!</p>
-            </div>
+    <div id="footer_placeholder"></div>
+    <script src="components.js"></script>
+    <script src="theme.js"></script>
 
-            <div class="footer_column">
-                <h3>Contact</h3>
-                <p>123 Business Street</p>
-                <p>Toronto, ON</p>
-                <p>(555)123-4567</p>
-                <p>info@CloverFieldTech.com</p>
-            </div>
-
-            <div class="footer_column">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer_bottom">
-            <p>&copy; 2026 CloverField Technologies</p>
-        </div>
-    </footer>
 </body>
 
 </html>

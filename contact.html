@@ -22,21 +22,7 @@
 </head>
 
 <body>
-    <header id="header_placeholder">
-            <a href="index.html" class="logo">
-                Comapny Name(change this)
-            </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header_placeholder"></div>
     <main>
         <section class="hero">
             <div class="hero_content">
@@ -48,18 +34,25 @@
         </section>
         <section class="form">
         <h1>Contact Us</h1>
-        <form>
-            <input type="text" ; placeholder="Name">
-            <input type="text" ; placeholder="Email">
-            <input type="text" ; placeholder="Subject"></input>
-            <textarea placeholder="Message" ;></textarea><br>
-            <a href="#" class="button">Submit</a>
+        <form id="contact-form">
+            <input id="name" type="text" placeholder="Name"></input>
+            <span class="error-msg"></span>
+
+            <input id="email" type="text" placeholder="Email"></input>
+            <span class="error-msg"></span>
+
+            <input id="subject" type="text" placeholder="Subject"></input>
+            <textarea id="message" placeholder="Message"></textarea>
+            <span class="error-msg"></span>
+
+            <button type="submit" class="button">Submit</button>
         </form>
         </section>
     </main>
-    <footer id="footer_placeholder">
-        <p>&copy;2026 Company Name.</p>
-    </footer>
+    <div id="footer_placeholder"></div>
+    <script src="components.js"></script>
+    <script src="theme.js"></script>
+    <script src="contact_val.js"></script>
 </body>
 
 </html>
