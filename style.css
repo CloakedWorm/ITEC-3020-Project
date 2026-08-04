@@ -1,14 +1,117 @@
 :root {
     --primary: #403D88;
+    --darkPrimary: #9CB080;
     --secondary: #AF719D;
+    --darkSecondary: #618764;
     --accent: #8B639B;
+    --darkAccent: #2B5748;
 
     --background: #F8B2B2;
+    --darkBackground: #273338;
 
     --dark: #1F2937;
     --light: #FFFFFF;
 }
-
+/* Theme Toggle Button */
+.theme_toggle{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--background);
+}
+body[data-theme="dark"] .theme_toggle {
+    background-color: var(--darkBackground);
+    color: var(--light);
+}
+body[data-theme="dark"] {
+    background-color: var(--darkBackground);
+    color: var(--light);
+}
+body[data-theme="dark"] header {
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] .logo {
+    color: var(--darkSecondary);
+}
+body[data-theme="dark"] .hero a {
+    background-color: var(--darkSecondary);
+    color: var(--light);
+}
+body[data-theme="dark"] .hero_content{
+    color:var(--darkSecondary);
+}
+body[data-theme="dark"] .call_to_action {
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] .button {
+    background-color: var(--darkSecondary);
+    color: var(--light);
+}
+body[data-theme="dark"] .button:hover {
+    background-color: var(--darkAccent);
+}
+body[data-theme="dark"] .service_card h3{
+    color: var(--darkAccent);
+}
+body[data-theme="dark"] footer {
+    background-color: var(--darkSecondary);
+}
+body[data-theme="dark"] .hero_content,
+body[data-theme="dark"] .service_card,
+body[data-theme="dark"] .product_card,
+body[data-theme="dark"] .news_card,
+body[data-theme="dark"] .contact_info,
+body[data-theme="dark"] .form{
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] nav{
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] nav ul li a {
+    color: var(--darkAccent);
+}
+body[data-theme="dark"] nav ul{
+    
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] nav a {
+    background-color: var(--darkPrimary);
+}
+body[data-theme="dark"] nav a:hover {
+    background-color: var(--darkAccent);
+}
+body[data-theme="dark"] input,
+body[data-theme="dark"] textarea {
+    background-color: var(--darkSecondary);
+    color: var(--light);
+}
+body[data-theme="dark"] .footer_column h3{
+    color: var(--dark);
+}
+body[data-theme="dark"] .map_container img{
+    background-color: var(--darkSecondary);
+}
+body[data-theme="dark"] .map p{
+    color: var(--light);
+    }
+body[data-theme="dark"] .overview{
+    background-color: var(--darkSecondary);
+    color: var(--dark);
+}
+body[data-theme="dark"] .service_card p,
+body[data-theme="dark"] .service_card h4{
+    color: var(--dark);
+}
+body[data-theme="dark"] .call_to_action h2,
+body[data-theme="dark"] .call_to_action p{
+    color: var(--dark);
+}
+body[data-theme="dark"] .form input,
+body[data-theme="dark"] .form textarea {
+    background-color: var(--darkAccent);
+    color: var(--light);
+}
 /*home page*/
 * {
     margin: 0;
@@ -240,6 +343,7 @@ footer {
     gap: 1rem;
     margin: auto;
     max-width: 900px;
+    border-radius: 8px;
 }
 .form input, .form textarea {
     width: 100%;
@@ -258,6 +362,14 @@ footer {
     cursor: pointer;
     transition: background-color .3s ease;
 }
+/*News Page*/
+#news_container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+}
+
 /*About Page*/
 .map {
     text-align: left;
