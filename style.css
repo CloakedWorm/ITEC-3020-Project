@@ -134,6 +134,7 @@ main {
 .button {
     display: inline-block;
     padding: 1rem 2rem;
+    cursor: pointer;
 
     background-color: var(--secondary);
     color: var(--light);
@@ -231,7 +232,32 @@ footer {
 
     border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
-
+/*contact Page*/
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    max-width: 900px;
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.form button {
+    padding: 12px 24px;
+    background-color: var(--secondary);
+    color: var(--light);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
 /*About Page*/
 .map {
     text-align: left;
